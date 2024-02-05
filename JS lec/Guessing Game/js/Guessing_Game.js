@@ -1,8 +1,25 @@
 // CREAT SECRET NUMBER 
 
-var secretNumber = 4 ;
-var guss = prompt("Guss a number");
- 
-// ASK USER FOR GUSS
+var secretNumber = 4;
 
-// CHECK GUSS
+// ASK USER FOR GUESS
+
+var stringGuess = prompt("Guess a number");
+var guess = Number(stringGuess);
+// CHECK GUESS
+
+if (guess === secretNumber) {
+    alert("You GOT IT RIGHT!");
+}
+
+// CHECK IF GUESS HIGHER
+else if (guess > secretNumber) {
+    alert("Too high. Guess again!");
+}
+
+
+// CHECK IF GUESS LOWER 
+
+else {
+    alert("Too low. Guess again!");
+}
